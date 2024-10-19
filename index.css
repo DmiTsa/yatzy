@@ -1,4 +1,101 @@
-.dice {
+@font-face {
+    font-family: "Unbounded-variable";
+    src: url("./fonts/Unbounded/Unbounded-VariableFont_wght.ttf") format("woff2-variations");
+    font-weight: 400 900;
+    /* font-stretch: 75% 125%; */
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    margin: 0 auto;
+} */
+
+body {
+    background: url(./assets/background.png);
+}
+
+.field {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tables {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.table {
+    width: 300px;
+    /* height: 500px; */
+    /* margin: 10px; */
+    padding: 0.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border: 2px solid lightgray;
+    border-radius: 1rem;
+    /* background-color: brown; */
+}
+
+.sides {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.player {
+    text-align: center;
+    font-family: 'Unbounded-variable', monospace;
+    font-size: 2rem;
+}
+
+.table .side {
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 0.5rem; */
+}
+
+.row {
+    width: 120px;
+    /* height: 40px; */
+    display: flex;
+    margin: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+.row img {
     width: 50px;
     height: 50px;
 }
+
+.row .kind_points {
+    width: 44px;
+    height: 44px;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family: 'Unbounded-variable', monospace;
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.dice-field {}
+
+/* .dice {
+    width: 50px;
+    height: 50px;
+} */
