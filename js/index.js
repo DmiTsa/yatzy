@@ -9,8 +9,10 @@ const newGameNode = document.querySelector('.new_game')
 const newGameStartNode = document.querySelector('#new-game-start')
 const aboutNode = document.querySelector('.about')
 const menu = document.querySelector('#menu')
+const fieldsetNode = document.querySelector('.fieldset')
 
 const tablesNode = document.querySelector('.tables')
+const rowsNode = document.querySelector('.rows')
 const fieldSetNode = document.querySelector('.fieldset')
 
 const attemptButton = document.querySelector('#attempt')
@@ -129,7 +131,7 @@ function renderDiceField(diceSet, destNode) {
     ]
 
     destNode.innerHTML = ''
-    diceSet.state.forEach((el) => {
+    diceSet.state.forEach((el, i) => {
         const node = document.createElement('img')
         node.classList.add('dice')
 
@@ -137,6 +139,10 @@ function renderDiceField(diceSet, destNode) {
             node.src = diceImgPathDefault
         } else {
             node.src = diceImgPaths[el - 1]
+            node.id = `dice${i}`
+            if (currentDiceSet.blocked[i]) {
+                node.classList.add('dice_block')
+            }
         }
 
         destNode.appendChild(node)
@@ -158,6 +164,14 @@ function pageRouter(pageName) {
         gameWrapperNode.classList.add('hidden')
         leaderboardNode.classList.add('hidden')
     }
+}
+
+function diceLocked(n) { //dice0 dice1
+    const node = document.querySelector(`#${n}`)
+    node.classList.toggle('dice_block')
+
+    const num = Number(parseInt(n.match(/\d+/)))
+    currentDiceSet.blocked[num] = !currentDiceSet.blocked[num]
 }
 
 //#endregion
@@ -196,7 +210,14 @@ attemptButton.addEventListener('click', () => {
     }
 })
 
-//listener click field
+fieldSetNode.addEventListener('click', (e) => {
+    const tg = e.target.id
+    if (['dice0', 'dice1', 'dice2', 'dice3', 'dice4'].includes(tg)) {
+        diceLocked(tg)
+    }
+
+    //tableChecker
+})
 
 menu.addEventListener('click', (e) => {
     pageRouter(e.target.id)

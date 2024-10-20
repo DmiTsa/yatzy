@@ -25,7 +25,74 @@
         <div class="field">
 
             <div class="new_game">
-                <div id="new-game-start" class="new_game_start">New game</div>
+
+                <div class="plQty">
+                    <label>
+                        Players
+                        <input id="players-qty-set" type="range" min="1" max="4">
+                    </label>
+                    <span id="players-qty">3</span>
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="pl1">Player 1</label>
+                            </td>
+                            <td>
+                                <input id="pl1" type="text">
+                            </td>
+                            <!-- <td>
+                                <input type="checkbox" name="" id="chPC1" disabled>
+                                <label for="hPC1">PC</label>
+                            </td> -->
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pl2">Player 2</label>
+                            </td>
+                            <td>
+                                <input id="pl2" type="text">
+                            </td>
+                            <!-- <td>
+                                <input type="checkbox" name="" id="chPC2">
+                                <label for="hPC2">PC</label>
+                            </td> -->
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pl3">Player 3</label>
+                            </td>
+                            <td>
+                                <input id="pl3" type="text">
+                            </td>
+                            <!-- <td>
+                                <input type="checkbox" name="" id="chPC3">
+                                <label for="hPC3">PC</label>
+                            </td> -->
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pl4">Player 4</label>
+                            </td>
+                            <td>
+                                <input id="pl4" type="text">
+                            </td>
+                            <!-- <td>
+                                <label for="hPC4">
+                                    <input type="checkbox" name="" id="chPC4">
+                                    <span>PC</span>
+                                </label>
+                            </td> -->
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="new-game-start" class="new_game_start">Start new game</div>
             </div>
 
             <div class="game-wrapper hidden">
@@ -118,11 +185,11 @@
                     </button>
 
                     <div class="fieldset">
-                        <!-- <img id="dice1" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
-                    <img id="dice2" class="dice" src="./assets/diceImg/d1.png" alt="dice">
-                    <img id="dice3" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
-                    <img id="dice4" class="dice" src="./assets/diceImg/d1.png" alt="dice">
-                    <img id="dice5" class="dice" src="./assets/diceImg/d1.png" alt="dice"> -->
+                        <!-- <img id="dice0" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice1" class="dice" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice2" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice3" class="dice" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice4" class="dice" src="./assets/diceImg/d1.png" alt="dice"> -->
                     </div>
 
                     <button id="stop" class="button">

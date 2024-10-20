@@ -65,7 +65,6 @@ class userTable {
         }
     }
 
-
     setOne(arr) {
         const num = 1
         if (this.state.isOne) {
