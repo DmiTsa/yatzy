@@ -11,118 +11,146 @@
 <body>
     <div class="container">
 
-        <div class="header">
-            header
-        </div>
+        <header class="header">
+            <nav id="menu">
+                <ul>
+                    <li id="leaderboard">Leaderboard</li>
+                    <!-- <li id="New">Leaderboard</li> -->
+                    <li id="game">Game</li>
+                    <li id="about">About</li>
+                </ul>
+            </nav>
+        </header>
 
         <div class="field">
 
-            <div class="tables">
+            <div class="new_game">
+                <div id="new-game-start" class="new_game_start">New game</div>
+            </div>
 
-                <div class="table">
+            <div class="game-wrapper hidden">
 
-                    <div class="player">Player 1</div>
+                <div class="tables">
+                    <!-- <div class="table">
+                    <div class="player active_player">Player 1</div>
 
-                    <div class="sides">
+                    <div class="rows">
 
-                        <div class="side">
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/one.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/two.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/three.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/four.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/five.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/six.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/yat.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
-
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/one.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
                         </div>
 
-                        <div class="side">
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/kind_three.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/kind_three.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/two.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/kind_four.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/kind_four.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/house.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/three.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/small.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/house.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/large.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/four.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row">
-                                <img class="tileImg" src="./assets/field/chance.png" alt="yatzy kind">
-                                <div class="kind_points">23</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/small.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
-                            <div class="row total">
-                                <!-- <img class="tileImg" src="" alt="yatzy kind"> -->
-                                <div class="kind_points">230</div>
-                            </div>
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/five.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
 
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/large.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
+
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/six.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
+
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/yat.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
+
+                        <div class="row">
+                            <img class="tileImg" src="./assets/field/chance.png" alt="yatzy kind">
+                            <div class="kind_points">23</div>
+                        </div>
+
+                        <div class="row total">
+                            <img class="tileImg" src="./assets/score.png" alt="yatzy kind">
+                            <div class="kind_points points_score">230</div>
                         </div>
 
                     </div>
 
+                </div> -->
                 </div>
 
-                <!-- <div class="table">
-                    <div class="row">row</div>
-                    <div class="row">row</div>
-                    <div class="row">row</div>
-                    <div class="row">row</div>
-                    <div class="row">row</div>
-                </div> -->
+                <div class="dice_field">
+
+                    <button class="button" disabled>
+                        <img id="attempt" src="./assets/dice.png" alt="button">
+                    </button>
+
+                    <div class="fieldset">
+                        <!-- <img id="dice1" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice2" class="dice" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice3" class="dice dice_block" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice4" class="dice" src="./assets/diceImg/d1.png" alt="dice">
+                    <img id="dice5" class="dice" src="./assets/diceImg/d1.png" alt="dice"> -->
+                    </div>
+
+                    <button id="stop" class="button">
+                        <img src="./assets/stop.png" alt="attempt button">
+                    </button>
+
+                </div>
 
             </div>
 
-            <div class="dice-field">playfield</div>
+            <div class="leaderboard hidden">
+                leaderboard
+            </div>
+
+            <div class="about hidden">
+                about
+            </div>
 
         </div>
 
+        <footer class="footer">
+            <span>Yatzy game 2024 DmiTsa</span>
+        </footer>
+
     </div>
-    <!-- <img class="dice" src="./assets/diceImg/d1.png" alt="dice"> -->
+
+    <script src="./js/classes.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
